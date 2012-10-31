@@ -1,0 +1,35 @@
+DReAMSim (Dynamic Re-configurable Autonomous Many-task Simulator)
+http://sourceforge.net/projects/dreamsim/
+
+Copyright (c) 2010 Arash Ostadzadeh
+http://www.ce.ewi.tudelft.nl/ostadzadeh/
+
+
+DReAMSim provides a simple simulation framework for modeling homogeneous and/or heterogeneous (re)-configurable processing elements in a large-scale distributed environment. In particular, DReAMSim enables users to model task scheduling techniques at a preliminary design stage in order to investigate their performance potential.
+
+DReAMSim is open source and provided under the GNU Lesser General Public License (LGPL), specifically for academic (non-commercial) purposes.
+
+
+What it does
+============
+At the moment, DReAMSim is used to simulate task scheduling in distributed environments that utilize (re)-configurable devices as processing elements (PEs). Based on the implemented scheduling policy, a number of critical statistics are extracted to facilitate the comparison of different task scheduling techniques. DReAMSim has been deliberately developed with a very simple-to-use interface to allow non-professional users implement their own task scheduling algorithms without being bothered with all the hassles of a full-fledged commercial simulator, yet it has the basic features required for research purposes in this respect.
+
+
+How to use
+==========
+Most of the code is self-explanatory and easily interpreted. A sample <main.cpp> file is provided to demonstrate the utilization of the simulator. To implement your own task scheduling algorithm, primarily you have to modify the "RunTaskScheduler" function in the DReAMSim class. Based on the scheduling algorithm, one may need to modify other parts of the code as well.
+
+The following articles provide a detailed overview of the structure and facilities of DReAMSim. We strongly encourage you to study them before using the simulation framework.
+
+- M.F. Nadeem, S.A. Ostadzadeh, M. Ahmadi, M. Nadeem, S. Wong, A Novel Dynamic Task Scheduling Algorithm for Grid Networks with Reconfigurable Processors, 5th HiPEAC Workshop on Reconfigurable Computing (WRC), January 2011, Heraklion, Greece.
+
+- M.F. Nadeem, S.A. Ostadzadeh, S. Wong, K.L.M. Bertels, Task Scheduling Strategies for Dynamic Reconfigurable Processors in Distributed Systems, International Conference on High Performance Computing & Simulation (HPCS), July 2011, Istanbul, Turkey.
+
+- M.F. Nadeem, S.A. Ostadzadeh, M. Nadeem, S. Wong, K.L.M. Bertels, A Simulation Framework for Reconfigurable Processors in Large-scale Distributed Systems, 40th International Conference on Parallel Processing (ICPP), September 2011, Taipei City, Taiwan.
+
+- M.F. Nadeem, I. Ashraf, S.A. Ostadzadeh, S. Wong, K.L.M. Bertels, Task Scheduling in Large-scale Distributed Systems Utilizing Partial Reconfigurable Processing Elements, 26th IEEE International Parallel and Distributed Processing Symposium (IPDPS), May 2012, Shanghai, China.
+
+
+Bug Report
+==========
+Please use the bug report facility on sourceforge. Alternatively, you may direct your bug reports to "Arash Ostadzadeh" (ostadzadeh@gmail.com). It will be helpful if you have a clear description of what went wrong.
